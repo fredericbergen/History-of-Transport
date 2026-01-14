@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Evolution Verkehrsmittel</title>
+	
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body> 
+  <div class="BOX">
+	
+	<header class="HEADER">
+	
+    <div class="HEADER"><img src="Bilder/Header_komprimiert150.jpg" alt="Header History of Transport" height="auto" width="100%">
+	
+		
+	</div>
+		
+	</header>
+		
+		<nav class="NAV">
+			
+				<div class="HEADERBILD" alt="Silhouette">
+			
+			</div>
+			
+			<audio id="sound" src="Soundeffekte/Auto_gekürzt.mp3"></audio>  
+
+   <script src="Java_script/Sound_auto.js">
+       
+  </script><!--Das ist nur ein Beispiel, wie man Sounds auf Bilder macht. In dem Fall bezieht sich der Autosound auf HEADERBILD und somit auf die Silhouette-->
+			
+			
+			<div class="EBENE1">
+                 <a href="Index.html">Home</a>
+			</div>
+				
+			<div class="EBENE1">Transportmittel			
+				<div class="EBENE2">
+					<a href="Startseite_1804_1817.html">1804-1817</a>
+					<a href="Startseite_1881_1885.html">1881-1885</a>
+					<a href="Startseite_1891_1896.html">1891-1896</a>
+					<a href="Startseite_1934_1936.html">1934-1936</a>
+					<a href="Startseite_1952_1968.html">1952-1968</a>
+				</div>
+			</div>
+			<div class="EBENE1">
+				 <a href="quizseite.html">Teste dein Wissen</a>
+			</div>
+			
+		</nav>
+	
+	<main class="MAIN">
+		<br>
+		 
+			
+
+			 	 
+			<h2>Dampfeisenbahn</h2>
+		<div class="button-group">
+  <button id="playButton1">Text vorlesen</button>
+  <button id="stopButton1">Anhalten</button>
+  <button id="resetButton1">Zurücksetzen</button>
+</div>
+				
+		
+		<script>
+		
+		var audio1 = new Audio("mp3_texte/Dampfeisenbahn.mp3"); 
+
+document.getElementById("playButton1").addEventListener("click", function() {
+  audio1.play();
+});
+
+document.getElementById("stopButton1").addEventListener("click", function() {
+  audio1.pause();
+  audio1.currentTime = 0;
+});
+
+document.getElementById("resetButton1").addEventListener("click", function() {
+  audio1.currentTime = 0;
+});
+			
+			</script>
+
+		<p> Die Dampfeisenbahn wurde im 19. Jahrhundert erfunden und gilt als eine der wichtigsten Errungenschaften der Menschheit. Die Geschichte der Eisenbahn begann allerdings bereits früher, und zwar mit der Erfindung der Dampfmaschine und der Entwicklung von Schienenfahrzeugen allgemein. 
+<br><br>Es gibt viele Erfinder, die zur Entwicklung der Eisenbahn beitrugen. Die ersten Schienenbahnen gab es bereits im Mittelalter, wobei diese noch aus Holz bestanden, und für kleine Wagen gemacht wurden, etwa damit Bergleute die gewonnene Kohle befördern konnten. Zudem entstanden im 16. Jahrhundert die ersten Schienenbahnen für den Transport außerhalb der Bergwerke. Diese Bahnen wurden von Pferden gezogen und hatten den Vorteil, dass ein Pferd etwa 30-mal so viel ziehen konnte wie vorher auf dem Rücken. <br><br>
+			
+	 	
+			
+Die Dampfeisenbahn wurde von dem englischen Ingenieur <a class="POPUP" onclick="toggleImage()">Richard Trevithick</a>
+  <img class="image" id="image" alt="Trevithick" src="Bilder/Trevithick.png" height="420px" width="adjust">
+
+  <script>
+    function toggleImage() {
+      var image = document.getElementById("image");
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+  </script> 
+			
+erfunden, welcher auch heute noch als einer der Väter der Eisenbahn angesehen wird. Im Jahr 1804 baute er die erste funktionsfähige Dampflokomotive. Diese fuhr auf einer Schiene und war in der Lage eine Last von 10 Tonnen zu befördern. Dabei erreichte die Dampflok eine Geschwindigkeit von acht Km/h.<br><br> Allerdings fand Trevithick keinen Käufer für seine Erfindung. Und auch nach zahlreichen Verbesserungen hatte er vier Jahre später kein Glück und es gab kaum Interesse an seiner Erfindung, weshalb er nach einigen Jahren aufgab. Ein Grund dafür war sicherlich auch, dass die Eisenschienen das Gewicht der Dampflok auf Dauer nicht aushielten und brachen.<br><br> Er war seiner Zeit voraus, denn erst 1825 wurden das erste Mal Personen mit der Dampfeisenbahn von Stockton nach Darlington transportiert. Es war die erste Bahnstrecke für den öffentlichen Personenverkehr und wurde von Georg Stephenson gebaut.<br><br>  
+Zu Lebzeiten bekam Trevithick kaum Anerkennung für seine Arbeit und er starb in Armut. Heute zählt er jedoch zu den größten Erfindern und Ingenieuren seiner Zeit und er legte den Grundstein für die industrielle Revolution und seine Ideen sind auch heute noch von großer Bedeutung.
+
+		</p>
+		<br>
+		<br>
+		<br>
+		<h2>Fahrrad</h2>
+				
+	<div class="button-group">
+  <button id="playButton2">Text vorlesen</button>
+  <button id="stopButton2">Anhalten</button>
+  <button id="resetButton2">Zurücksetzen</button>
+</div>
+		
+		<script>
+		
+var audio2 = new Audio("mp3_texte/Fahrrad.mp3");
+
+document.getElementById("playButton2").addEventListener("click", function() {
+  audio2.play();
+});
+
+document.getElementById("stopButton2").addEventListener("click", function() {
+  audio2.pause();
+  audio2.currentTime = 0;
+});
+
+document.getElementById("resetButton2").addEventListener("click", function() {
+  audio2.currentTime = 0;
+});
+
+			
+			</script>
+	
+		<p>Vor der Erfindung der Eisenbahn und des Fahrrads wurden Lebensmittel größtenteils mit Pferden transportiert. Allerdings gab es In den Jahren 1812-1817 in ganz Europa schlechte Ernten. Grund dafür waren die Napoleonischen Kriege. Insbesondere in Deutschland haben die Napoleonischen Armeen die Weizen und Hafervorräte verbraucht, was zur Folge hatte, dass der Transport mit Pferden erheblich teurer wurde. Der Bedarf an pferdelosen Transportmitteln war dementsprechend groß.<br><br>
+			
+
+
+Doch der 28-jährigeBaron Karl von Drais entwarf eine Lösung für das Problem. Er erfand zwei unterschiedliche Fahrmaschinen: Eins hatte ein Laufrad (Tretmühle) und Zwei hatte eine geschmiedete Kurbelwelle, die es dem Fahrer ermöglichte, nach vorne gewandt zu sitzen. Als Drais den Fürsten auf dem Wiener Kongress seine Erfindung präsentierte, zeigten sie jedoch kein Interesse an seiner Erfindung, da seine Fahrmaschine auf schlechten Straßen und in den Bergen sehr müde machte.<br><br>
+Nach dem Kongress entschied Drais, das Abstoßen vom Boden auszuprobieren und erfand das Zweirad dann schließlich im Jahre 1817. Das Zweirad wurde später als Laufrad bezeichnet und sah dem Fahrrad, welches wir heute kennen zwar schon ähnlich, allerdings mit der Besonderheit, dass es keine Pedalkurbeln gab und man sich stattdessen mit den Füßen vom Boden abstoßen musste. Das Balancieren auf nur 2 statt 4 Rädern war für die Menschen damals aber ohnehin befremdlich und so war es gut, dass die Füße einen zusätzlichen Halt gaben.<br><br> Das Laufrad von Drais wog etwa 20Kg und konnte bis zu 22Km/h schnell fahren. Im Jahr 1817 gab es bereits 5.000-10.000 dieser Laufräder. Drais‘ Erfindung fang auch schnell Anklang in der gesamten westlichen Welt und wurde in allen möglichen Ländern weiterentwickelt. Das Zweirad hat damals jedoch acht bis zehn Pfund gekostet was in der heutigen Zeit wohl 590-740 Pfund entsprachen. Für die Arbeiterklasse war das kaum bezahlbar, weshalb unter anderem in England das Zweirad zum Statusmodell vieler Adeliger wurde. <br><br>	
+		
+Es gibt einige Quellen, die behaupten, dass das Fahrrad erst mit anbringen der Pedalkurbeln im Jahr 1966 erfunden wurde und das Laufrad lediglich ein Vorgänger des Fahrrads war. Pedalkurbeln gab es aber schon deutlich vor der Erfindung des Zweirads und wurden von Drais bereits in seiner Fahrmaschine für 4 Räder verwendet. Abgesehen von den Pedalkurbeln gibt es daher so gut wie keine Unterschiede zu dem Fahrrad, welches wir heute kennen. Aufgrund dessen gilt Drais heute als der wahre Erfinder des Fahrrads.</p>
+	
+<div class="container-fahrrad">
+  <img src="Bilder/Fahrrad_frei.png" alt="Fahrrad mit sounds" class="bike-image" height="200px" width="adjust">
+</div>
+<audio id="bike-sound" src="Soundeffekte/Fahrrad_gekürzt.mp3"></audio>
+
+   <script src="Java_script/Sound_Fahrrad.js"></script>
+
+	</main>
+
+	<footer class="FOOTER">
+		
+			<ul>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="Startseite_datenschutzerklärung.html">Datenschutzhinweise</a></li>
+				<li><a href="Startseite_quellenverzeichnis.html">Quellenverzeichnis</a></li>
+			</ul>
+		
+	</footer>
+
+	<div class="RAKETE">	
+	
+		<img src="Bilder/Rocket_1_frei.png" alt="Rocket" id="RaketeStarten" width="100px" height="auto">
+        
+	</div>
+      
+</div> 
+    
+<script src="Java_script/Rakete_animation.js">
+    
+    </script>
+	 
+</body>
+</html>

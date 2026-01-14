@@ -1,0 +1,527 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+ padding: 0;   
+ margin:0;    
+}
+  
+	.BOX	{
+		text-align:center;
+        display: flex;
+        flex-direction:column;
+        gap: 0px;
+		padding: 0px;
+		margin: 0px;
+		height: auto;
+		width: 100%;
+		background-color:#f1ebe7;
+	    font-family: 'Montserrat';
+		
+		}
+
+.HEADER 
+{
+	display: flex;
+	position: inherit;
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	
+
+
+
+}
+
+.HEADERBILD    {
+		
+    width: 650px;
+    height: 100%;
+	margin-bottom: 10px;
+    margin-right: auto;
+    background-image: url("../Bilder/Silhouette_gold_transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+	     	
+	}
+
+.NAV {
+			z-index: 999;
+			top: 0;
+			position:inherit;
+			display:flex;											/* Ausrichtung der Navpunkte in Ebene 1 */
+			height: 100px;											/* Höhe der Navbar */
+			width: 100%;											/* Breite der Navbar */
+			background-color: #59351f;
+	        justify-content: flex-end;
+	 		text-align:center;
+   			align-items:flex-end;
+			border-bottom: solid 2px black;
+		   border-top: solid 2px black;
+		}
+.EBENE1, .EBENE2 a {										/* Formatierung aller Texte in der Navbar */
+			display: grid;
+			line-height: 100px;
+		    z-index: 999;
+			text-decoration: none;
+			color: #b8860b;
+			font-size: 20px;
+			text-align: center;
+			font-family: "montserrat";
+			font-weight: bold;
+ 		
+		}
+.EBENE1 {	/* Navpunkte in Ebene 1 */
+			height: 100px;
+			width: 200px;
+            z-index: 999;
+			background-color: transparent;
+			display:flex;
+			text-align: center;
+			justify-content: center;
+	        border-left: solid 2px black;
+        	border-top: solid 2px black;
+            
+		}
+
+.EBENE1 a {
+            text-decoration: none; 
+	        color: #b8860b;
+        }
+		.EBENE1:hover {
+			background-color: #005a78;
+            cursor: pointer;
+		}
+        .EBENE1 a:visited {
+            color: #b8860b;
+            text-decoration: none;
+        }
+		.EBENE2 {													
+			display: none;											
+			position: absolute;										 
+			height: auto;
+			width: 200px;
+			background-color: #59351f;
+			text-align: center;
+            z-index: 999;
+		}
+		.EBENE2 a:hover {
+			background-color: #005a78;
+            z-index: 999;
+		}
+		.EBENE1:hover > .EBENE2 {									/* macht Ebene 2 sichtbar */
+			display: block;											/* durch Pseudoklasse Hover */
+		}										/* durch Pseudoklasse Hover */
+		
+ .Slidebox {					
+    display: flex;
+    justify-content: center;
+    align-items: center;		
+    height: 100vh;			
+    margin: 0;
+	background-color: #f1ebe7;
+	padding-top: 50px;
+
+}
+
+.slideshow {
+    width: 80%;
+	height: 95vh;
+    position: relative;
+	background-color: #e8ded4;
+	border-radius: 15px;
+}
+
+.slide {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	padding-bottom: 50px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 2s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide-textbereich {
+    position: absolute;
+    top: 76%;
+    background-color: #e8ded4;
+    color: black;
+	width: 100%;
+    text-align: center;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	box-shadow: 0px -17px 14px 0px rgba(0,0,0,0.1);
+
+    
+}
+
+.slide-bild{
+	
+	height: 50%;
+}
+
+.slide-ueberschrift {
+    font-size: 40px;
+    margin: 20px 0;
+	color: #59351f;
+}
+
+.slide-beschreibung {
+    font-size: 1.4em;
+    margin: 100;
+    color: #59351f; 
+}
+
+
+
+.pfeil {
+    position: absolute;
+    top: -200px;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    color: #59351f;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pfeil:hover {
+    color: grey;
+}
+
+.pfeil-links {
+    left: 0;
+}
+
+.pfeil-rechts {
+    right: 0;
+}
+
+.indikatorenliste {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+	font-size: 30px;
+	margin: 0px;
+    padding: 0;
+	box-shadow: 0px 17px 14px 0px rgba(0,0,0,0.1);
+}
+
+.indikator {
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 2s;
+	color: #59351f;
+}
+
+
+.indikator:hover {
+	font-size: 45px;
+	
+}
+
+.aktiv {  /* Das ist die Klasse, welche durch die Java Script angesprochen wird*/
+    opacity: 1;
+
+}
+
+
+
+.MAIN 
+{
+  width: 80%;
+  color: #59351f;
+  background-color: #e8ded4;
+  margin: 50px auto;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  border-radius: 15px;
+  text-align: left;
+  padding-left: 35px;
+  padding-right: 40px;
+  height: auto;
+	
+}
+
+
+
+	.FOOTER    {
+		
+		display: flex;
+        height: 100px;
+        width: 100%;
+        background-color: #472a19;
+        padding-left: 0;
+		 font-family: 'Montserrat';
+		justify-content:space-between;
+	 	text-align:center;
+   		align-items:center;
+	    border-top: solid 2px black;
+		border-bottom: solid 2px black;
+	}		
+
+	.FOOTER ul {
+  		display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 80%;
+    margin: 0 auto;
+	
+	
+		
+	}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button[type="reset"],
+button[type="submit"] {
+    margin: 15px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.BILDER {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	text-align: center;
+}
+.title-container {
+  margin-top: 20px;
+}
+
+.title-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+	
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.image-item img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-item p {
+  margin-top: 5px;
+}
+.container-fahrrad {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 220px;
+margin-right: 20px;	
+}
+
+.bike-image {
+  position: absolute;
+  right: 0;
+	
+
+}
+
+.container-schoolbus {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 220px;
+margin-right: 620px;	
+}
+
+.bus-image {
+  position: absolute;
+  right: 0;
+
+}
+
+.button-group
+{
+	margin: 20px
+}
+
+   .image {
+      display: none;
+	   
+    }
+
+    .image.open {
+      display: block;
+	  float: left;
+		margin-bottom: 20px;
+		margin-right: 20px;
+   
+}
+
+
+	.FOOTER ul li {
+ 		display: inline-block;
+		align-self:end ;
+		padding:10px;
+		margin: auto;
+		justify-content:space-between;
+	}
+
+	.FOOTER ul li a {
+		font-family: 'Montserrat';
+		color: #b8860b;
+  		text-decoration:none;
+ 		display:block;
+  		padding: 10px;
+		
+		}
+
+
+.RAKETE {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 50px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.POPUP {
+	text-decoration: underline;
+	color: black;
+	cursor: help;
+}
+
+.HIDDEN {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0s ease-out 0s;
+}
+
+.SHOW {
+  opacity: 1;
+}
+
+.RaketeAnimation {
+  position: fixed;
+  z-index: 1;
+  max-width: 100px;
+  max-height: 200px;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  animation-name: rakete-fliegen;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition: all 1s;
+  opacity: 1; 
+}
+
+@keyframes rakete-fliegen {
+  0% {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+  60% {
+    opacity: 1; 
+  }
+  100% {
+    transform: translateY(-300px);
+    opacity: 0; 
+  }
+}
+
+.impressum {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.impressum .explanation {
+    background-color: #e8ded4;
+    padding: 20px;
+    margin-bottom: 20px;
+	margin-top: 20px;
+    border-radius: 10px;
+	color: #59351f;
+}
+
+.impressum .details {
+	background-color: #e8ded4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+	color: #59351f;
+}
+.impressum strong {
+	font-size: 22px;
+}
+
+/* ===== Kontaktformular zentrieren ===== */
+
+.kontakt-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* horizontal zentriert */
+    justify-content: center;
+    text-align: center;
+}
+
+.kontakt-form {
+    width: 320px;            /* saubere feste Breite */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.kontakt-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+

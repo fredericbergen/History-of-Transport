@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, header, nav, footer{
+  margin: 0;
+  padding: 0;
+}
+    
+
+.MAIN {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #e8ded4;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+	font-family: 'Montserrat';
+}
+
+.impressum {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.impressum .explanation {
+    background-color: #e8ded4;
+    padding: 20px;
+    margin-bottom: 20px;
+	margin-top: 20px;
+    border-radius: 10px;
+	color: #59351f;
+}
+
+.impressum .details {
+	background-color: #e8ded4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+	color: #59351f;
+}
+.impressum strong {
+	font-size: 22px;
+}
+
+
+.HEADER 
+{
+	display: flex;
+	position: inherit;
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	
+
+
+
+}
+
+.HEADERBILD    {
+		
+    width: 650px;
+    height: 100%;
+    background-image: url("Bilder/Silhouette_gold_transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+	     	
+	}
+
+.NAV {
+			z-index: 999;
+			top: 0;
+			position:inherit;
+			display:flex;											/* Ausrichtung der Navpunkte in Ebene 1 */
+			height: 100px;											/* Höhe der Navbar */
+			width: 100%;											/* Breite der Navbar */
+			background-color: #59351f;
+	        justify-content: flex-end;
+	 		text-align:center;
+   			align-items:flex-end;
+			border-bottom: solid 2px black;
+		   border-top: solid 2px black;
+		}
+.EBENE1, .EBENE2 a {										/* Formatierung aller Texte in der Navbar */
+			display: grid;
+			line-height: 100px;
+		    z-index: 999;
+			text-decoration: none;
+			color: #b8860b;
+			font-size: 20px;
+			text-align: center;
+			font-family: "montserrat";
+			font-weight: bold;
+ 		
+		}
+.EBENE1 {	/* Navpunkte in Ebene 1 */
+			height: 100px;
+			width: 200px;
+            z-index: 999;
+			background-color: transparent;
+			display:flex;
+			text-align: center;
+			justify-content: center;
+	        border-left: solid 2px black;
+        	border-top: solid 2px black;
+            
+		}
+
+.EBENE1 a {
+            text-decoration: none; 
+	        color: #b8860b;
+        }
+		.EBENE1:hover {
+			background-color: #005a78;
+            cursor: pointer;
+		}
+        .EBENE1 a:visited {
+            color: #b8860b;
+            text-decoration: none;
+        }
+		.EBENE2 {													
+			display: none;											
+			position: absolute;										 
+			height: auto;
+			width: 200px;
+			background-color: #59351f;
+			text-align: center;
+            z-index: 999;
+		}
+		.EBENE2 a:hover {
+			background-color: #005a78;
+            z-index: 999;
+		}
+		.EBENE1:hover > .EBENE2 {									/* macht Ebene 2 sichtbar */
+			display: block;											/* durch Pseudoklasse Hover */
+		}										/* durch Pseudoklasse Hover */
+	.FOOTER    {
+		
+		display: flex;
+        height: 100px;
+        width: 100%;
+        background-color: #472a19;
+        padding-left: 0;
+		 font-family: 'Montserrat';
+		justify-content:space-between;
+	 	text-align:center;
+   		align-items:center;
+	}		
+
+	.FOOTER ul {
+  		display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 80%;
+    margin: 0 auto;
+	
+	
+		
+	}
+	.FOOTER ul li {
+ 		display: inline-block;
+		align-self:end ;
+		padding:10px;
+		margin: auto;
+		justify-content:space-between;
+	}
+
+	.FOOTER ul li a {
+		font-family: 'Montserrat';
+		color: #b8860b;
+  		text-decoration:none;
+ 		display:block;
+  		padding: 10px;
+		
+		}
+.RAKETE {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 50px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.POPUP {
+	text-decoration: underline;
+	color: black;
+	cursor: help;
+}
+
+.HIDDEN {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0s ease-out 0s;
+}
+
+.SHOW {
+  opacity: 1;
+}
+
+.RaketeAnimation {
+  position: fixed;
+  z-index: 1;
+  max-width: 100px;
+  max-height: 200px;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  animation-name: rakete-fliegen;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition: all 1s;
+  opacity: 1; 
+}
+
+@keyframes rakete-fliegen {
+  0% {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+  60% {
+    opacity: 1; 
+  }
+  100% {
+    transform: translateY(-300px);
+    opacity: 0; 
+  }
+}
+    

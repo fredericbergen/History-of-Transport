@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='author' content='David Röskamm'>
+	<title>JS Images Ersetzen</title>
+	<style>
+		.BOX {
+			padding: 200px;
+			height: auto;
+			width: 200px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+
+<body>
+	<div class='BOX'>
+		<img id='ANIMAL' src='JS Images 1.png' alt='Kuh'>
+	</div>
+	
+	<script>
+		document.querySelector('#ANIMAL').addEventListener("mouseover",BildErsetzen);
+		
+		function BildErsetzen() {
+			document.querySelector('#ANIMAL').src = 'JS Images 2.png';				// Zuweisung der neuen Bilddatei
+			document.querySelector('#ANIMAL').alt = 'Schwein';						// Zuweisung der neuen Beschreibung
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="CSS/stylequiz.css">
+</head>
+<body>
+	
+	<header class="HEADER">
+	
+    <div class="HEADER"><img src="Bilder/Header_komprimiert150.jpg" alt="Header History of Transport" height="auto" width="100%">
+	
+		
+	</div>
+		
+	</header>
+		
+		<nav class="NAV">
+			
+			<div class="HEADERBILD">
+			
+			</div>
+			<div class="EBENE1">
+                 <a href="Index.html">Home</a>
+			</div>
+				
+			<div class="EBENE1">Transportmittel			
+				<div class="EBENE2">
+					<a href="Startseite_1804_1817.html">1804-1817</a>
+					<a href="Startseite_1881_1885.html">1881-1885</a>
+					<a href="Startseite_1891_1896.html">1891-1896</a>
+					<a href="Startseite_1934_1936.html">1934-1936</a>
+					<a href="Startseite_1952_1968.html">1952-1968</a>
+				</div>
+			</div>
+			<div class="EBENE1">Teste dein Wissen
+			</div>
+			
+			</nav>
+	
+  <div id="quiz-container">
+    <h1>Quiz</h1>
+    <div id="question-container"> <!-- Container für die einzelnen Quizfragen -->
+      <p id="question"></p> <!-- Hier wird die aktuelle Quizfrage angezeigt -->
+      <ul id="choices"> <!-- Liste der Antwortmöglichkeiten -->
+        <li><input type="radio" name="choice" id="choice1"><label for="choice1" onclick="selectChoice(0)"></label></li>
+        <li><input type="radio" name="choice" id="choice2"><label for="choice2" onclick="selectChoice(1)"></label></li>
+        <li><input type="radio" name="choice" id="choice3"><label for="choice3" onclick="selectChoice(2)"></label></li>
+        <li><input type="radio" name="choice" id="choice4"><label for="choice4" onclick="selectChoice(3)"></label></li>
+      </ul>
+    </div>
+    <button id="next-btn" onclick="loadNextQuestion()">Weiter</button> <!-- Knopf zum Laden der nächsten Quizfrage -->
+     <div id="results-container" style="display: none;"> <!-- Container für die Anzeige der Ergebnisse am Ende des Quiz -->
+      <h2>Ergebnisse</h2>
+      <table id="results"></table> <!-- Tabelle zur Darstellung der Quizfragen und der Benutzerantworten -->
+    </div>
+  </div>
+	
+	
+<footer class="FOOTER">
+		
+			<ul>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="Startseite_datenschutzerklärung.html">Datenschutzhinweise</a></li>
+				<li><a href="Startseite_quellenverzeichnis.html">Quellenverzeichnis</a></li>
+			</ul>
+		
+	</footer>
+	
+			<div class="RAKETE">	
+	
+		<img src="Bilder/Rocket_1_frei.png" alt="Rocket" id="RaketeStarten" width="100px" height="auto">
+        
+	</div>
+
+  <script src="Java_script/script.js"></script>
+  
+  <script src="Java_script/Rakete_animation.js">
+    
+    </script>
+  
+</body>
+</html>
+

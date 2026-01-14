@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Evolution Verkehrsmittel</title>
+	
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body> 
+  <div class="BOX">
+	
+	<header class="HEADER">
+	
+    <div class="HEADER"><img src="Bilder/Header_komprimiert150.jpg" alt="Header History of Transport" height="auto" width="100%">
+	
+		
+	</div>
+		
+	</header>
+		
+		<nav class="NAV">
+			
+				<div class="HEADERBILD" alt="Silhouette">
+			
+			</div>
+			
+			<audio id="sound" src="Soundeffekte/Auto_gekürzt.mp3"></audio>  
+
+   <script src="Java_script/Sound_auto.js">
+       
+  </script><!--Das ist nur ein Beispiel, wie man Sounds auf Bilder macht. In dem Fall bezieht sich der Autosound auf HEADERBILD und somit auf die Silhouette-->
+			
+			
+			<div class="EBENE1">
+                 <a href="Index.html">Home</a>
+			</div>
+				
+			<div class="EBENE1">Transportmittel			
+				<div class="EBENE2">
+					<a href="Startseite_1804_1817.html">1804-1817</a>
+					<a href="Startseite_1881_1885.html">1881-1885</a>
+					<a href="Startseite_1891_1896.html">1891-1896</a>
+					<a href="Startseite_1934_1936.html">1934-1936</a>
+					<a href="Startseite_1952_1968.html">1952-1968</a>
+				</div>
+			</div>
+			<div class="EBENE1">
+				 <a href="quiz/quizseite.html">Teste dein Wissen</a>
+			</div>
+			
+	
+			
+		</nav>
+	
+	<main class="MAIN">
+		<br>
+		
+		<h2>Düsenpassagierflugzeug</h2>
+		
+						<div class="button-group">
+  <button id="playButton1">Text vorlesen</button>
+  <button id="stopButton1">Anhalten</button>
+  <button id="resetButton1">Zurücksetzen</button>
+</div>
+				
+		
+		<script>
+		
+		var audio1 = new Audio("mp3_texte/Duesenpassagierflugzeug.mp3"); 
+
+document.getElementById("playButton1").addEventListener("click", function() {
+  audio1.play();
+});
+
+document.getElementById("stopButton1").addEventListener("click", function() {
+  audio1.pause();
+  audio1.currentTime = 0;
+});
+
+document.getElementById("resetButton1").addEventListener("click", function() {
+  audio1.currentTime = 0;
+});
+			
+			</script>
+		<p> Eines der ersten Düsenpassagierflugzeuge war die De Havilland DH.106 Comet, die 1949 in Dienst gestellt wurde. Obwohl sie ein großer Fortschritt gegenüber den damals verwendeten Kolbenmotor-Flugzeugen darstellte, hatte die Comet aufgrund von Problemen mit dem Rumpfdruck, die zu mehreren Abstürzen führten, einen schlechten Ruf.<br><br> 
+Die Boeing 707, die 1958 eingeführt wurde, war das erste Düsenpassagierflugzeug, das kommerziell erfolgreich war. Die 707 war größer und schneller als die Comet und hatte eine größere Reichweite, was sie zur bevorzugten Wahl für viele Fluggesellschaften machte.<br>
+In den folgenden Jahrzehnten entwickelten Flugzeughersteller wie Airbus und McDonnell Douglas eine Vielzahl von Düsenpassagierflugzeugen mit unterschiedlichen Größen, Reichweiten und Kapazitäten. Das größte und bekannteste Düsenpassagierflugzeug ist der Airbus A380, der 2007 in Dienst gestellt wurde und bis zu 853 Passagiere transportieren kann.</p>
+        
+       <div class="HEADER">
+  <img id="Fallschirm" src="Bilder/Fallschirm_Flugzeug_frei.png" alt="Fallschirm" height="auto" width="50%">		
+</div>
+
+<script>
+  const fallschirmImg = document.querySelector('#Fallschirm');
+
+  fallschirmImg.addEventListener("mouseover", function() {
+    fallschirmImg.src = 'Bilder/Fallschirm_Springer_frei.png';
+    fallschirmImg.alt = 'Fallschirm_Springer';
+  });
+
+  fallschirmImg.addEventListener("mouseout", function() {
+    fallschirmImg.src = 'Bilder/Fallschirm_Flugzeug_frei.png';
+    fallschirmImg.alt = 'Fallschirm';
+  });
+</script>
+		<br>
+		<h2>Überschalljet</h2>
+		
+			<div class="button-group">
+  <button id="playButton2">Text vorlesen</button>
+  <button id="stopButton2">Anhalten</button>
+  <button id="resetButton2">Zurücksetzen</button>
+</div>
+		
+		<script>
+		
+var audio2 = new Audio("mp3_texte/ueberschalljet.mp3");
+
+document.getElementById("playButton2").addEventListener("click", function() {
+  audio2.play();
+});
+
+document.getElementById("stopButton2").addEventListener("click", function() {
+  audio2.pause();
+  audio2.currentTime = 0;
+});
+
+document.getElementById("resetButton2").addEventListener("click", function() {
+  audio2.currentTime = 0;
+});
+
+			
+			</script>
+		<p>Der Überschall-Jet, auch bekannt als Überschallflugzeug, ist ein Flugzeug, das in der Lage ist, Geschwindigkeiten zu erreichen, die über der Schallgeschwindigkeit liegen (mehr als 1235 km/h). Die Geschichte des Überschall-Jets beginnt in den 1950er Jahren, als sich die Luftfahrtindustrie darum bemühte, schnellere Flugzeuge zu entwickeln.<br><br> 
+Eines der bekanntesten Überschall-Jets ist die Concorde, die von 1969 bis 2003 in Betrieb war. Sie war das Ergebnis einer Zusammenarbeit zwischen Frankreich und Großbritannien und hatte eine Höchstgeschwindigkeit von Mach 2,04 (etwa 2170 km/h). Die Concorde war ein Symbol für technischen Fortschritt und Luxus und wurde von reichen Passagieren und Prominenten genutzt, um schnell über den Atlantik zu fliegen.<br>
+Obwohl die Concorde das bekannteste Überschall-Jet war, gab es auch andere Modelle wie die russische Tupolev Tu-144, die allerdings weniger erfolgreich waren. Die Tu-144 wurde auch als "Konkordski" bezeichnet und hatte ein ähnliches Design wie die Concorde.<br><br> 
+Obwohl der Überschall-Jet ein technologischer Meilenstein war, hatte er auch seine Probleme. Zum Beispiel verbrauchten diese Flugzeuge viel Kraftstoff, was die Kosten erhöhte und die Umweltbelastung erhöhte. Zudem gab es auch Bedenken in Bezug auf Lärmbelästigung durch Überschall-Knalle.
+Trotz dieser Herausforderungen arbeiten Wissenschaftler und Ingenieure weiterhin an der Entwicklung neuer Überschall-Jet-Modelle. Im Jahr 2020 stellte Boeing das Modell "Boom" vor, das in der Lage sein soll, Passagiere von New York nach London in nur drei Stunden und 15 Minuten zu transportieren. Es bleibt abzuwarten, ob dieses Modell die Herausforderungen des Überschallfluges erfolgreich meistern wird.<br><br> 
+Zusammenfassend lässt sich sagen, dass der Überschall-Jet ein wichtiger Meilenstein in der Geschichte der Luftfahrtindustrie war. Obwohl es einige Herausforderungen gab, hat dieser Fortschritt dazu beigetragen, den Luftverkehr schneller und effizienter zu machen.</p>
+		
+	</main>
+	
+	<footer class="FOOTER">
+		
+			<ul>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="Startseite_datenschutzerklärung.html">Datenschutzhinweise</a></li>
+				<li><a href="Startseite_quellenverzeichnis.html">Quellenverzeichnis</a></li>
+			</ul>
+		
+	</footer>
+
+	<div class="RAKETE">	
+	
+		<img src="Bilder/Rocket_1_frei.png" alt="Rocket" id="RaketeStarten" width="100px" height="auto">
+        
+	</div>
+      
+</div> 
+    
+<script src="Java_script/Rakete_animation.js">
+    
+    </script>
+	 
+</body>
+</html>

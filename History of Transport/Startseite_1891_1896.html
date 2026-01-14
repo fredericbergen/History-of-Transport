@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Evolution Verkehrsmittel</title>
+	
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body> 
+  <div class="BOX">
+	
+	<header class="HEADER">
+	
+    <div class="HEADER"><img src="Bilder/Header_komprimiert150.jpg" alt="Header History of Transport" height="auto" width="100%">
+	
+		
+	</div>
+		
+	</header>
+		
+		<nav class="NAV">
+			
+				<div class="HEADERBILD" alt="Silhouette">
+			
+			</div>
+			
+			<audio id="sound" src="Soundeffekte/Auto_gekürzt.mp3"></audio>  
+
+   <script src="Java_script/Sound_auto.js">
+       
+  </script><!--Das ist nur ein Beispiel, wie man Sounds auf Bilder macht. In dem Fall bezieht sich der Autosound auf HEADERBILD und somit auf die Silhouette-->
+			
+			
+			<div class="EBENE1">
+                 <a href="Index.html">Home</a>
+			</div>
+				
+			<div class="EBENE1">Transportmittel			
+				<div class="EBENE2">
+					<a href="Startseite_1804_1817.html">1804-1817</a>
+					<a href="Startseite_1881_1885.html">1881-1885</a>
+					<a href="Startseite_1891_1896.html">1891-1896</a>
+					<a href="Startseite_1934_1936.html">1934-1936</a>
+					<a href="Startseite_1952_1968.html">1952-1968</a>
+				</div>
+			</div>
+			<div class="EBENE1">
+				 <a href="quiz/quizseite.html">Teste dein Wissen</a>
+			</div>
+			
+		</nav>
+	
+	<main class="MAIN">
+		<br>
+		
+		<h2>Omnibus</h2>
+
+				<div class="button-group">
+  <button id="playButton1">Text vorlesen</button>
+  <button id="stopButton1">Anhalten</button>
+  <button id="resetButton1">Zurücksetzen</button>
+</div>
+				
+		
+		<script>
+		
+		var audio1 = new Audio("mp3_texte/Omnibus.mp3"); 
+
+document.getElementById("playButton1").addEventListener("click", function() {
+  audio1.play();
+});
+
+document.getElementById("stopButton1").addEventListener("click", function() {
+  audio1.pause();
+  audio1.currentTime = 0;
+});
+
+document.getElementById("resetButton1").addEventListener("click", function() {
+  audio1.currentTime = 0;
+});
+			
+			</script>
+		<p> Die Erfindung des Omnibusses, also eines großen Transportfahrzeugs mit festen Routen und Fahrplänen, ist nicht auf eine einzelne Person zurückzuführen. Einer der nennenswerten Pioniere war der englische Unternehmer George Shillibeer, welcher bereits im Jahr 1829 die erste Omnibusgesellschaft in London gründete. Damals wurden die Busse allerdings noch mit Pferden gezogen. Seinem Beispiel folgten auch andere Unternehmer und auch in vielen anderen Städten entstanden Omnibusgesellschaften.<br><br> 
+Der erste Motorgetriebene Omnibus geht, wie auch das Auto, auf den Ingenieur Carl Benz zurück, dem es im Jahr 1895 gelang einen Omnibus mit Verbrennungsmotor zu konzipieren. Doch erst nach dem Ersten Weltkrieg gab es einen wirklichen Durchbruch in der Entwicklung der Omnibusse durch den Ingeneur Karl Kässbohrer. Ihm gelang es, einen vollständig selbsttragenden Omnibus zu entwerfen. Sein Omnibus mit dem Namen “Setra” war in der Lage eine viel größere Anzahl von Fahrgästen zu transportieren und revolutionierte so den Busverkehr und den öffentlichen Nahverkehr allgemein.
+
+	<div class="container-schoolbus">
+ <a href="Kontakt.html"> <img src="Bilder/Schoolbus_frei.png" alt="Teambus" class="bus-image" height="200px" width="adjust"> </a>
+</div>
+
+		</p>
+		<br>
+		<h2>Flugzeug</h2>
+		<div class="button-group">
+  <button id="playButton2">Text vorlesen</button>
+  <button id="stopButton2">Anhalten</button>
+  <button id="resetButton2">Zurücksetzen</button>
+</div>
+		
+		<script>
+		
+var audio2 = new Audio("mp3_texte/Flugzeug.mp3");
+
+document.getElementById("playButton2").addEventListener("click", function() {
+  audio2.play();
+});
+
+document.getElementById("stopButton2").addEventListener("click", function() {
+  audio2.pause();
+  audio2.currentTime = 0;
+});
+
+document.getElementById("resetButton2").addEventListener("click", function() {
+  audio2.currentTime = 0;
+});
+
+			
+			</script>
+	  
+		<p>Als Erfinder des Flugzeugs gelten die Brüdern <a class="POPUP" onclick="toggleImage()">Orville und Wilbur Wright</a>
+  <img class="image" id="image" alt="Benz" src="Bilder/Wright.png" height="420px" width="adjust">
+
+  <script>
+    function toggleImage() {
+      var image = document.getElementById("image");
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+  </script>
+	. Inspiration ihrer Erfindung waren dabei die Beiträge von Otto Lilienthal. Lilienthal hatte zuvor mit verschiedenen Flügelformen und Gewichtsverteilungen experimentiert und es gelang ihm mit einem selbstgebauten Gleitflugzeug bereits ein paar Meter zu fliegen, allerdings verstarb er bei einem Flugunfall tragischerweise ein paar Jahre später im Jahr 1896. Er gilt heute aber noch als eine der wichtigsten Pioniere der Luftfahrt. <br><br> 
+Den amerikanischen Brüdern Wright gelang es schließlich im Jahr 1903 das erste Mal mit einem Motor angetriebenen Flugzeug zu fliegen. Das Flugzeug bestand aus Holz, Stoff und Draht und hatte eine Spannweite von 12 Metern. Der Motor hatte eine Leistung von 12 PS. Zwar dauerte der Flug auch nur 12 Sekunden, das Event, welches in Kitty Hawk in North Carolina stattfand, gilt aber auch heute noch als bedeutender Meilenstein in der Geschichte der Luftfahrt. <br><br> 
+Nach dem ersten erfolgreichen Flug verbesserten Orville und Wilbur Wright ihr Flugzeug und weitere Flüge gelangen immer besser. Die Flüge wurden immer länger und höher und bald danach fingen auch andere Erfinder und Ingenieure an, eigene Flugzeuge zu entwickeln die immer größer, schneller und effizienter wurden. Bis zur Erfindung des Passagierflugzeugs vergingen allerdings noch viele Jahre.
+
+
+</p>
+		
+		<br>
+		<br>
+		<br>
+		<h2>Lastkraftwagen</h2>
+	  
+				<div class="button-group">
+  <button id="playButton3">Text vorlesen</button>
+  <button id="stopButton3">Anhalten</button>
+  <button id="resetButton3">Zurücksetzen</button>
+</div>
+		
+		<script>
+		
+var audio3 = new Audio("mp3_texte/LKW.mp3");
+
+document.getElementById("playButton3").addEventListener("click", function() {
+  audio3.play();
+});
+
+document.getElementById("stopButton3").addEventListener("click", function() {
+  audio3.pause();
+  audio3.currentTime = 0;
+});
+
+document.getElementById("resetButton3").addEventListener("click", function() {
+  audio3.currentTime = 0;
+});
+			</script>
+		<p>Im Jahr 1896 produzierte die deutsche Firma Benz und Cie den ersten LKW der Welt. Dieses Fahrzeug hatte eine Nutzlast von 1,5 Tonnen und wurde von einem 2-Zylinder-Benzinmotor angetrieben. Es war ein riesiger Fortschritt im Vergleich zu den Pferdewagen, die zuvor für den Transport von Gütern auf der Straße verwendet wurden.<br>
+In den folgenden Jahren wurden immer mehr LKW-Modelle von verschiedenen Herstellern entwickelt und produziert. Der Markt wuchs schnell, da die LKWs viele Vorteile gegenüber Pferdewagen boten, darunter höhere Geschwindigkeiten, längere Reichweiten und eine größere Nutzlast.
+Während des Ersten Weltkriegs wurden LKWs zum Transport von Soldaten, Waffen und Ausrüstung verwendet. Die Kriegszeit beschleunigte die Entwicklung von LKW-Technologie, und nach dem Krieg wurden viele dieser Fortschritte auch auf den zivilen Markt übertragen.<br><br> 
+
+
+In den 1920er Jahren wurden die LKWs immer größer und leistungsfähiger. Neue Materialien wie Stahl, Aluminium und Gummi wurden in der Produktion verwendet, was zu leichteren und stärkeren LKW führte. Der erste Diesel-LKW wurde 1923 von der Firma Mercedes-Benz produziert und bot eine höhere Effizienz als Benzin-LKWs.<br><br> 
+
+
+Während des Zweiten Weltkriegs wurden LKWs erneut zum Transport von Kriegsmaterialien eingesetzt. Nach dem Krieg entwickelte sich der LKW-Markt weiter und es wurden immer mehr Modelle produziert. Der Trend zur Massenproduktion von LKWs führte zu einer Standardisierung von Komponenten und Teilen, was die Wartung und Reparatur von LKWs vereinfachte.<br>
+In den 1960er Jahren wurden die LKWs immer größer und schwerer. Die Entwicklung von Hochleistungs-Dieselmotoren ermöglichte höhere Geschwindigkeiten und längere Reichweiten. Neue Technologien wie die Servolenkung und die Automatikgetriebe verbesserten die Handhabung von LKWs.
+In den 1980er Jahren wurden LKWs mit moderneren Sicherheitsfunktionen ausgestattet, wie zum Beispiel Antiblockiersysteme (ABS), Airbags und Gurtstraffer. Auch in der Technologie wurden Fortschritte gemacht, wie beispielsweise die Einführung von GPS-Systemen, die die Navigation erleichtern und die Effizienz verbessern.<br><br> 
+Heute sind LKWs unverzichtbar für den Transport von Gütern auf der Straße. Die LKW-Industrie hat sich zu einem wichtigen Wirtschaftszweig entwickelt und bietet zahlreiche Arbeitsplätze in der Produktion, dem Verkauf und dem Service von LKWs.
+
+
+
+</p>
+		
+	</main>
+	
+	<footer class="FOOTER">
+		
+			<ul>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="Startseite_datenschutzerklärung.html">Datenschutzhinweise</a></li>
+				<li><a href="Startseite_quellenverzeichnis.html">Quellenverzeichnis</a></li>
+			</ul>
+		
+	</footer>
+
+<div class="RAKETE">	
+	
+		<img src="Bilder/Rocket_1_frei.png" alt="Rocket" id="RaketeStarten" width="100px" height="auto">
+        
+	</div>
+      
+</div> 
+    
+<script src="Java_script/Rakete_animation.js">
+    
+    </script>
+	 
+</body>
+</html>

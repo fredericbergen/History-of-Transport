@@ -1,0 +1,311 @@
+body {
+  font-family: Arial, sans-serif;
+	color: #59351f;
+	margin: 0;
+    padding: 0;
+}
+
+#quiz-container {
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  width: 80%;
+  max-width: 80%;
+  color: #59351f;
+  background-color: #e8ded4;
+  font-family: "montserrat";
+  font-size: 30px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+h1, h2 {
+  color: #b8860b;
+  text-align: center;
+    margin: 20px 0;
+}
+
+#question {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+}
+
+#choices li {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+/*Label ist der Hintergrund der Antwortmöglichkeiten*/
+label { 
+  display: block;
+  padding: 10px;
+  background-color: #b8860b;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+height: auto;	
+}
+
+label:hover {
+  background-color: #005a78;
+}
+
+#next-btn {
+  display: none;
+  padding: 13px 26px;
+  background-color: #b8860b;
+  color: #59351f;
+  border: none;
+	float: right;
+  cursor: pointer;
+  border-radius: 3px;
+	
+
+}
+
+#results-container {
+  margin-top: 20px;
+}
+
+#results {
+  margin: 0 auto;
+  text-align: left;
+}
+
+#results th, #results td {
+  padding: 5px 10px;
+  border: 1px solid grey;
+}
+
+
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .question-container {
+    display: none;
+	margin: 20px
+  }
+
+  .results-container {
+    display: none;
+    margin-top: 20px;
+	  font-family: "Montserrat";
+	  font-size: 24px;
+		  
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+.HEADER {
+	display: flex;
+	position: inherit;
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	
+
+}
+
+.HEADERBILD    {
+		
+    width: 650px;
+    height: 100%;
+	margin-bottom: 10px;
+    margin-right: auto;
+    background-image: url("../Bilder/Silhouette_gold_transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+	     	
+	}
+
+.NAV {
+			z-index: 0;
+			top: 0;
+			position:inherit;
+			display:flex;											/* Ausrichtung der Navpunkte in Ebene 1 */
+			height: 100px;											/* Höhe der Navbar */
+			width: 100%;											/* Breite der Navbar */
+			background-color: #59351f;
+	        justify-content: flex-end;
+	 		text-align:center;
+   			align-items:flex-end;
+			border-bottom: solid 2px black;
+		}
+.EBENE1, .EBENE2 a {										/* Formatierung aller Texte in der Navbar */
+			display: grid;
+			line-height: 100px;
+		    z-index: 999;
+			text-decoration: none;
+			color: #b8860b;
+			font-size: 20px;
+			text-align: center;
+			font-family: montserrat;
+			font-weight: bold;
+ 		
+		}
+.EBENE1 {	/* Navpunkte in Ebene 1 */
+			height: 100px;
+			width: 200px;
+            z-index: 999;
+			background-color: transparent;
+			display:flex;
+			text-align: center;
+			justify-content: center;
+	        border-left: solid 2px black;
+            
+		}
+
+.EBENE1 a {
+            text-decoration: none; 
+        }
+		.EBENE1:hover {
+			background-color: #005a78;
+            cursor: pointer;
+		}
+        .EBENE1 a:visited {
+            color: #b8860b;
+            text-decoration: none;
+        }
+		.EBENE2 {													
+			display: none;											
+			position: absolute;										 
+			height: auto;
+			width: 200px;
+			background-color: #59351f;
+			text-align: center;
+            z-index: 999;
+		}
+		.EBENE2 a:hover {
+			background-color: #005a78;
+            z-index: 999;
+		}
+		.EBENE1:hover > .EBENE2 {									/* macht Ebene 2 sichtbar */
+			display: block;											/* durch Pseudoklasse Hover */
+		}
+
+	.FOOTER    {
+		
+		display: flex;
+        height: 100px;
+        width: 100%;
+        background-color: #59351f;
+        padding-left: 0;
+		font-family:"montserrat";
+		justify-content:space-between;
+	 	text-align:center;
+   		align-items:center;
+	}		
+
+
+	.FOOTER ul {
+  		display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 80%;
+    margin: 0 auto;
+}
+	.FOOTER ul li {
+ 		display: inline-block;
+		align-self:end ;
+		padding:10px;
+		margin: auto;
+		justify-content:space-between;
+	}
+
+	.FOOTER ul li a {
+		font-family: "montserrat";
+		color: #b8860b;
+  		text-decoration:none;
+ 		display:block;
+  		padding: 10px;
+		
+		}
+		.RAKETE {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 50px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.POPUP {
+	text-decoration: underline;
+	color: black;
+	cursor: help;
+}
+
+.HIDDEN {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0s ease-out 0s;
+}
+
+.SHOW {
+  opacity: 1;
+}
+
+.RaketeAnimation {
+  position: fixed;
+  z-index: 1;
+  max-width: 100px;
+  max-height: 200px;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  animation-name: rakete-fliegen;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition: all 1s;
+  opacity: 1; 
+}
+
+@keyframes rakete-fliegen {
+  0% {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+  60% {
+    opacity: 1; 
+  }
+  100% {
+    transform: translateY(-300px);
+    opacity: 0; 
+  }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Evolution Verkehrsmittel</title>
+	
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body> 
+   <div class="BOX">
+	
+	<header class="HEADER">
+	
+    <div class="HEADER"><img src="Bilder/Header_komprimiert150.jpg" alt="Header History of Transport" height="auto" width="100%">
+	
+		
+	</div>
+		
+	</header>
+		
+		<nav class="NAV">
+			
+				<div class="HEADERBILD" alt="Silhouette">
+			
+			</div>
+			
+			<audio id="sound" src="Soundeffekte/Auto_gekürzt.mp3"></audio>  
+
+   <script src="Java_script/Sound_auto.js">
+       
+  </script><!--Das ist nur ein Beispiel, wie man Sounds auf Bilder macht. In dem Fall bezieht sich der Autosound auf HEADERBILD und somit auf die Silhouette-->
+			
+			
+			<div class="EBENE1">
+                 <a href="Index.html">Home</a>
+			</div>
+				
+			<div class="EBENE1">Transportmittel			
+				<div class="EBENE2">
+					<a href="Startseite_1804_1817.html">1804-1817</a>
+					<a href="Startseite_1881_1885.html">1881-1885</a>
+					<a href="Startseite_1891_1896.html">1891-1896</a>
+					<a href="Startseite_1934_1936.html">1934-1936</a>
+					<a href="Startseite_1952_1968.html">1952-1968</a>
+				</div>
+			</div>
+			<div class="EBENE1">
+				 <a href="quizseite.html">Teste dein Wissen</a>
+			</div>
+			
+	
+		</nav>
+	
+	<main class="MAIN">
+		<br>
+		
+		<h2>Straßenbahn</h2>
+		<div class="button-group">
+		  <button id="playButton1">Text vorlesen</button>
+  <button id="stopButton1">Anhalten</button>
+  <button id="resetButton1">Zurücksetzen</button>
+</div>
+				
+		
+		<script>
+		
+		var audio1 = new Audio("mp3_texte/Straßenbahn.mp3"); 
+
+document.getElementById("playButton1").addEventListener("click", function() {
+  audio1.play();
+});
+
+document.getElementById("stopButton1").addEventListener("click", function() {
+  audio1.pause();
+  audio1.currentTime = 0;
+});
+
+document.getElementById("resetButton1").addEventListener("click", function() {
+  audio1.currentTime = 0;
+});
+			
+			</script>
+		
+		<p> Vor dem Jahr 1881 gab es in Städten bereits ein Eisenbahnnetz für öffentliche Verkehrsmittel. Die ersten Straßenbahnen wurden von Pferden gezogen und waren eine alternative zu den Pferdekutschen. Sie hatten jedoch den Nachteil, dass sie langsam waren und von der Kraft und Gesundheit der Pferde abhängig waren. Zudem produzieren Pferde auch Kot, der weggemacht werden musste. Und auch Dampfstraßenbahnen, welche später hinzukamen hatten Nachteile. Sie waren laut, rauchten und verursachten schädliche Abgase.<br><br> 
+Werner von Siemens, ein deutscher Erfinder und Unternehmer, hatte schon in den 1860er Jahren erste Versuche unternommen, elektrische Motoren für Straßenbahnen zu entwickeln. Doch es dauerte noch bis 1881, bis er die erste elektrische Straßenbahn erfolgreich umsetzte. Die erste elektrische Straßenbahn fuhr in Lichterfelde, einem Vorort von Berlin. Sie fuhr etwa 2,5 Kilometer und erreichte eine Geschwindigkeit von 15 Km/h. Damit war sie nicht nur leiser und umweltfreundlicher, sondern auch schneller und effizienter als Pferde- oder Dampfstraßenbahnen. <br><br> 
+Die Einführung der elektrischen Straßenbahn hatte einen enormen Einfluss auf den öffentlichen Verkehr und die Stadtentwicklung. In kurzer Zeit wurden in vielen Städten elektrische Straßenbahnen eingeführt und ersetzten die alten Pferde- und Dampfstraßenbahnen. Die elektrische Straßenbahn war nicht nur schneller und effizienter, sondern auch zuverlässiger und komfortabler für die Fahrgäste. Dadurch wurden auch mehr Menschen dazu ermutigt, öffentliche Verkehrsmittel zu nutzen.
+
+
+		</p>
+		<br>
+		<br>
+		<br>
+		<h2>Auto</h2>
+		
+		<div class="button-group">
+  <button id="playButton2">Text vorlesen</button>
+  <button id="stopButton2">Anhalten</button>
+  <button id="resetButton2">Zurücksetzen</button>
+</div>
+		
+		<script>
+		
+var audio2 = new Audio("mp3_texte/Auto.mp3");
+
+document.getElementById("playButton2").addEventListener("click", function() {
+  audio2.play();
+});
+
+document.getElementById("stopButton2").addEventListener("click", function() {
+  audio2.pause();
+  audio2.currentTime = 0;
+});
+
+document.getElementById("resetButton2").addEventListener("click", function() {
+  audio2.currentTime = 0;
+});
+			</script>
+			
+		<p>Die Erfindung des Automobils ist ein bedeutendes Ereignis in der Geschichte der Technik und Mobilität. Die Entstehung des Automobils war das Ergebnis einer langen und schrittweisen Entwicklung, die über mehrere Jahrzehnte hinweg stattfand und viele Erfinder und Ingenieure involvierte. Die frühe Geschichte des Automobils kann bis ins 18. Jahrhundert zurückverfolgt werden, als erste Entwicklungen im Bereich der Dampfmaschinen und Dampfkutschen stattfanden. Jedoch war die Idee eines Fahrzeugs mit einem Verbrennungsmotor, das ohne Pferdezug betrieben werden konnte, erst im 19. Jahrhundert ein Thema.<br><br> 
+ 
+Im späten 18. Jahrhundert entwickelten mehrere Erfinder und Ingenieure Konzepte für das Automobil. Zu den wichtigsten Pionieren gehörten <a class="POPUP" onclick="toggleImage()">Gottlieb Daimler</a>
+  <img class="image" id="image" alt="Daimler" src="Bilder/Daimler.png" height="420px" width="adjust">
+
+  <script>
+    function toggleImage() {
+      var image = document.getElementById("image");
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+  </script>
+			und Karl Benz, die unabhängig voneinander arbeiteten und jeweils ihre eigenen Fortschritte bei der Entwicklung von Fahrzeugen mit Verbrennungsmotoren machten.<br><br> 
+Im Jahr 1886 präsentierten sowohl Benz als auch Daimler ihre ersten motorisierten Fahrzeuge der Öffentlichkeit. Der von Benz entwickelte Benz Patent-Motorwagen war ein dreirädriges Fahrzeug, das von einem Benzinmotor angetrieben wurde und als das erste serienmäßig hergestellte Auto der Welt gilt. Daimlers "Reitwagen" hingegen war ein einspuriges Fahrzeug mit zwei Rädern, das als Vorläufer des modernen Motorrads gilt.<br>
+Die Erfindung des Automobils war ein Meilenstein in der Geschichte der Mobilität und Technik. Es ermöglichte den Menschen, sich schneller und effizienter fortzubewegen und hatte einen enormen Einfluss auf die Art und Weise, wie wir leben, arbeiten und reisen. Die Technologie des Verbrennungsmotors, die zur Entwicklung des Automobils führte, hat auch eine Vielzahl anderer Anwendungen in verschiedenen Bereichen der Industrie und Technik gefunden.
+
+</p>
+		
+		<br>
+		<br>
+		<br>
+		<h2>Motorrad</h2>
+		
+			<div class="button-group">
+  <button id="playButton3">Text vorlesen</button>
+  <button id="stopButton3">Anhalten</button>
+  <button id="resetButton3">Zurücksetzen</button>
+</div>
+		
+		<script>
+		
+var audio3 = new Audio("mp3_texte/Motorrad.mp3");
+
+document.getElementById("playButton3").addEventListener("click", function() {
+  audio3.play();
+});
+
+document.getElementById("stopButton3").addEventListener("click", function() {
+  audio3.pause();
+  audio3.currentTime = 0;
+});
+
+document.getElementById("resetButton3").addEventListener("click", function() {
+  audio3.currentTime = 0;
+});
+			</script>
+		<p>Die Entwicklung des Motorrads ging Hand in Hand mit der Entwicklung des Automobils. 1885 stellte Gottlieb Daimler den ersten benzinbetriebenen Motor vor, der später in Fahrzeugen verwendet werden sollte. Daimler und sein Partner Wilhelm Maybach experimentierten auch mit der Verwendung von Verbrennungsmotoren in Motorrädern.<br><br> 
+Ein wichtiger Schritt bei der Entwicklung des modernen Motorrads war die Erfindung des Einzylinder-Motors im Jahr 1894 durch Hildebrand und Wolfmüller. Ihr Motorrad war das erste, das ausschließlich für den Einsatz mit einem Verbrennungsmotor konzipiert war. Es hatte auch eine Hinterradfederung, die für ein besseres Fahrgefühl sorgte.<br>
+Die Entwicklung des Motorrads wurde auch durch die Erfindung des Ottomotors vorangetrieben. Der Ottomotor, der in den 1880er Jahren von Nikolaus August Otto entwickelt wurde, war effizienter und leistungsstärker als frühere Verbrennungsmotoren. Dies ermöglichte es den Herstellern, leistungsstärkere Motorräder zu bauen.<br><br> 
+Eine weitere wichtige Erfindung für das Motorrad war das Getriebe, das es dem Fahrer ermöglichte, die Geschwindigkeit zu variieren. 1901 stellte Triumph das erste Zweiganggetriebe vor und 1914 wurde das Dreiganggetriebe von Harley-Davidson eingeführt.
+Während des 20. Jahrhunderts wurde die Technologie des Motorrads immer weiter verbessert und verfeinert. Elektrische Systeme, Scheibenbremsen, ABS und andere technologische Fortschritte haben das Motorrad sicherer und zuverlässiger gemacht.<br>
+Insgesamt ist die Entwicklung des Motorrads ein Ergebnis der Fortschritte in der Verbrennungsmotortechnologie und der Automobilentwicklung.
+
+
+</p>
+		
+	</main>
+	
+	<footer class="FOOTER">
+		
+			<ul>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="Startseite_datenschutzerklärung.html">Datenschutzhinweise</a></li>
+				<li><a href="Startseite_quellenverzeichnis.html">Quellenverzeichnis</a></li>
+			</ul>
+		
+	</footer>
+
+	<div class="RAKETE">	
+	
+		<img src="Bilder/Rocket_1_frei.png" alt="Rocket" id="RaketeStarten" width="100px" height="auto">
+        
+	</div>
+      
+</div> 
+    
+<script src="Java_script/Rakete_animation.js">
+    
+    </script>
+	 
+</body>
+</html>
